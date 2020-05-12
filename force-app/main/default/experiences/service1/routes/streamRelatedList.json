@@ -1,0 +1,8 @@
+{
+  "appPageId" : "751c48f5-c372-4c5b-a496-665f3ca056af",
+  "id" : "f4294c5c-bb14-45f0-82b0-e05ee596d710",
+  "label" : "Stream Related List",
+  "routeType" : "relatedlist-0Fq",
+  "type" : "route",
+  "urlPrefix" : "streams"
+}
