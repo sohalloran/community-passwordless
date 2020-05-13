@@ -13,6 +13,10 @@ export default class PasswordlessRegistraton extends NavigationMixin(LightningEl
   lastname = '';
   firstname = '';
 
+  cancel(event) {
+    this.identifier = '';
+  }
+
   handleChange(event) {
     if (event.target.label === 'Email') {
       this.email = event.target.value;
