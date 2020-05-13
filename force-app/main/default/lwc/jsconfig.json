@@ -5,6 +5,9 @@
         "paths": {
             "c/passwordlesslogin": [
                 "passwordlesslogin/passwordlesslogin.js"
+            ],
+            "c/passwordlessRegistraton": [
+                "passwordlessRegistraton/passwordlessRegistraton.js"
             ]
         }
     },

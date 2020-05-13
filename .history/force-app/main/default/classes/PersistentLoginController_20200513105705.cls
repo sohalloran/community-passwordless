@@ -13,24 +13,14 @@ global without sharing class PersistentLoginController {
         @AuraEnabled public String error;
     }
 
-    @future
-    static void deactivateUser(Id userId) {
-        User u = new User(id = userId, IsActive=false);
-        update u;
-    }
-
     @AuraEnabled
     public static Uplink_AuraResponse startVerificationProcessForSignUp(String firstName, String lastName, String email) {
         
         Uplink_AuraResponse retRes = new Uplink_AuraResponse();
         Map<String, String> errors = new Map<String, String>();
         Map<String,String> codeMapUser = new Map<String,String>();
-        List<User> usrs = [select id, Email from User where Email =: email and IsActive =: true order by createddate];
-
+        List<User> usrs = [select id, Email from User where Email =: email and IsActive =: true];
         try{
-            if( usrs.size() > 0 ) {
-                deactivateUser(usrs[0].Id);
-            }
             String ACCOUNT_ID = '0012500001Lglyb';
             String PROFILE_ID = '00e25000000VfP7';
             String randomValue = String.valueOf(Math.random() * 1000);

@@ -16,7 +16,7 @@
     <enableKnowledgeable>false</enableKnowledgeable>
     <enableMemberVisibility>true</enableMemberVisibility>
     <enableNicknameDisplay>true</enableNicknameDisplay>
-    <enablePrivateMessages>false</enablePrivateMessages>
+    <enablePrivateMessages>true</enablePrivateMessages>
     <enableReputation>false</enableReputation>
     <enableShowAllNetworkSettings>true</enableShowAllNetworkSettings>
     <enableSiteAsContainer>true</enableSiteAsContainer>
@@ -29,14 +29,21 @@
     <networkMemberGroups>
         <profile>Admin</profile>
         <profile>customer community login user</profile>
-        <profile>customer community plus login user</profile>
-        <profile>customer community user</profile>
         <profile>customer community plus user</profile>
+        <profile>customer community user</profile>
+        <profile>customer community plus login user</profile>
+        <profile>high volume customer portal user</profile>
+        <profile>highvolumeportal</profile>
+        <profile>customer portal manager standard</profile>
+        <profile>external identity user</profile>
+        <profile>customer portal manager custom</profile>
+        <profile>platformportal</profile>
+        <profile>authenticated website</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
-        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
-        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Standard</homePageOverrideSetting>
         <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
         <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>

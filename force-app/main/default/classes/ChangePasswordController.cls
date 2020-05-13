@@ -11,4 +11,12 @@ public with sharing class ChangePasswordController {
     }     
     
    	public ChangePasswordController() {}
+    
+    public PageReference setPassword() {
+        integer i = Math.round(Math.random()*10000); 
+        Blob targetBlob = Blob.valueOf(String.valueOf(i));
+        Blob hash = Crypto.generateDigest('MD5', targetBlob);
+        String randomPassword = EncodingUtil.base64Encode(hash);
+        return Site.changePassword(randomPassword, randomPassword, oldpassword); 
+    }
 }

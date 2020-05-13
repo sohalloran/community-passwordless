@@ -10,11 +10,13 @@
     <authorizationRequiredPage>CommunitiesLogin</authorizationRequiredPage>
     <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
     <browserXssProtection>true</browserXssProtection>
+    <changePasswordPage>ChangePassword</changePasswordPage>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
     <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <forgotPasswordPage>ChangePassword</forgotPasswordPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
     <indexPage>CommunitiesLanding</indexPage>

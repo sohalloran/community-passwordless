@@ -13,12 +13,6 @@ global without sharing class PersistentLoginController {
         @AuraEnabled public String error;
     }
 
-    @future
-    static void deactivateUser(Id userId) {
-        User u = new User(id = userId, IsActive=false);
-        update u;
-    }
-
     @AuraEnabled
     public static Uplink_AuraResponse startVerificationProcessForSignUp(String firstName, String lastName, String email) {
         
@@ -29,7 +23,8 @@ global without sharing class PersistentLoginController {
 
         try{
             if( usrs.size() > 0 ) {
-                deactivateUser(usrs[0].Id);
+                usrs[0].IsActive = false;
+                update usrs[0];
             }
             String ACCOUNT_ID = '0012500001Lglyb';
             String PROFILE_ID = '00e25000000VfP7';
