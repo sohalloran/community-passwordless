@@ -6,6 +6,8 @@
 .sfdx/
 .localdevserver/
 .history/
+.history
+.vscode
 
 # Logs
 logs
